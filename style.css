@@ -38,6 +38,7 @@
   cursor: pointer;
   min-width: 230px;
   margin-bottom: 20px;
+  z-index: 2;
 }
 
 .profile {
@@ -60,4 +61,24 @@
 .profile p {
   margin-bottom: 10px;
   color: #ff7878;
+}
+
+.col::before,
+.col::after {
+  content: '';
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(135deg, #ff001d, #ddfa00);
+  position: absolute;
+  z-index: -1;
+}
+
+.col::before {
+  left: 0;
+  top: -8px;
+}
+
+.col::after {
+  right: 0;
+  bottom: -8px;
 }
