@@ -12,8 +12,13 @@
   height: 100vh;
   padding-left: 12%;
   padding-right: 12%;
-  padding-top: 80%;
+  padding-top: 80px;
   box-sizing: border-box;
   text-align: center;
   color: #fff;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 500;
 }
